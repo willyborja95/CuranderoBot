@@ -15,7 +15,6 @@ def consultaBeneficiosPlanta(strNoun):
     for respuesta in lstRespuesta:
         strRespuesta = strRespuesta + " - "+respuesta + "\n"
         #r = "Hablas de "+str(str(pais["nombre"]))
-    print(strRespuestaInd + strRespuesta)    
     return strRespuestaInd + strRespuesta
 
 def conversacion(m):
@@ -27,18 +26,17 @@ def conversacion(m):
     nlu_engine = SnipsNLUEngine(config=CONFIG_EN)
     nlu_engine.fit(sample_dataset)
 
-    text = (u""+m.text+"")
+    text = (u""+m.text.lower()+"")
     listaResultado = nlu_engine.parse(text)
     return procesarRespuesta(listaResultado)
     
 def procesarRespuesta(data):
-    print(json.dumps(data, indent=2))
+    #print(json.dumps(data, indent=2))
     if data["intent"] is not None:
         intent=data["intent"]["intentName"]
-        print("*********************************")
         print(intent)
         if intent=="Saludo":
-            return "Hola, yo tengo información acerca de plantas medicinales?"
+            return ("Hola, yo tengo información acerca de plantas medicinales\n"+consultarTodasPlantas())
 
         if intent=="ListarPlantas":
             slots= data["slots"]
@@ -49,8 +47,12 @@ def procesarRespuesta(data):
             return consultarTodosBeneficiosSalud()
 
         if intent=="BeneficiosPlantas":
-            planta= data["slots"][1]["rawValue"]
-            return(consultarBeneficiosPlantas(planta))
+            if(len(data["slots"])>1):
+                planta= data["slots"][1]["rawValue"]
+                return(consultarBeneficiosPlantas(planta))
+            else:
+                planta= data["slots"][0]["rawValue"]
+                return(consultarBeneficiosPlantas(planta))
 
     else:
         return "Disculpa, aun estoy aprendiendo, me decias?"
@@ -60,7 +62,6 @@ def consultarBeneficiosPlantas(strPlanta):
     lstRespuesta = c.consultaBeneficiosPlantaDb(strPlanta)
     strRespuesta = ""
     strRespuestaInd = "Las propiedades curativas de la planta "+strPlanta+" son:\n"
-    print (len(lstRespuesta))
     if (len(lstRespuesta))>0:
         for respuesta in lstRespuesta:
             strRespuesta = strRespuesta + " - "+respuesta + "\n"
@@ -72,7 +73,7 @@ def consultarBeneficiosPlantas(strPlanta):
 def consultarTodasPlantas():
     lstRespuesta = c.consultaTodasPlantas()
     strRespuesta = ""
-    strRespuestaInd = "Las plantas registradas son:\n"
+    strRespuestaInd = "Las plantas de las que puedes consultarme son:\n"
     for respuesta in lstRespuesta:
         strRespuesta = strRespuesta + " - "+respuesta + "\n"
         #r = "Hablas de "+str(str(pais["nombre"]))

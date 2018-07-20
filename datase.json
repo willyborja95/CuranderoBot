@@ -45,12 +45,6 @@
         },
         {
           "synonyms": [
-            " manzanillas"
-          ],
-          "value": "manzanilla"
-        },
-        {
-          "synonyms": [
             " beneficios salud"
           ],
           "value": "beneficios para la salud"
@@ -60,6 +54,40 @@
             " servir"
           ],
           "value": "sirve"
+        },
+        {
+          "synonyms": [
+            " manzanillas"
+          ],
+          "value": "manzanilla"
+        },
+        {
+          "synonyms": [],
+          "value": "ortiga"
+        },
+        {
+          "synonyms": [],
+          "value": "chilca"
+        },
+        {
+          "synonyms": [],
+          "value": "menta"
+        },
+        {
+          "synonyms": [],
+          "value": "floripondio"
+        },
+        {
+          "synonyms": [],
+          "value": "penco"
+        },
+        {
+          "synonyms": [],
+          "value": "nabo"
+        },
+        {
+          "synonyms": [],
+          "value": "totora"
         }
       ],
       "use_synonyms": true
@@ -145,6 +173,78 @@
               "entity": "planta",
               "slot_name": "planta",
               "text": "manzanilla"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "entity": "planta",
+              "slot_name": "planta",
+              "text": "manzanilla"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "entity": "planta",
+              "slot_name": "planta",
+              "text": "ortiga"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "entity": "planta",
+              "slot_name": "planta",
+              "text": "chilca"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "entity": "planta",
+              "slot_name": "planta",
+              "text": "menta"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "entity": "planta",
+              "slot_name": "planta",
+              "text": "floripondio"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "entity": "planta",
+              "slot_name": "planta",
+              "text": "penco"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "entity": "planta",
+              "slot_name": "planta",
+              "text": "nabo"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "entity": "planta",
+              "slot_name": "planta",
+              "text": "totora"
             }
           ]
         }

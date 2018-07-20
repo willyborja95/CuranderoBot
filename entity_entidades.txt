@@ -2,6 +2,13 @@ hola, hey
 beneficios, beneficio, ventajas, ventaja, bondades, bondad
 plantas, planta
 listar, enumerar, listame, enumerame
-manzanilla, manzanillas
 beneficios para la salud, beneficios salud
 sirve, servir
+manzanilla, manzanillas
+ortiga
+chilca
+menta
+floripondio
+penco
+nabo
+totora
