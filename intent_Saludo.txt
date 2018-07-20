@@ -1,0 +1,4 @@
+[saludo:saludo](hola)
+[saludo:saludo](hola) como estas
+[saludo:saludo](hola) que tal
+[saludo:saludo](hey) como vas 

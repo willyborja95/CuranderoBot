@@ -1,0 +1,3 @@
+que [beneficiosPlantas:beneficiosPlantas](beneficios) tiene la [planta:planta](manzanilla)
+cuales son los [beneficiosPlantas:beneficiosPlantas](beneficios) de la [planta:planta](manzanilla)
+para que [beneficiosPlantas:beneficiosPlantas](sirve) la [planta:planta](manzanilla)

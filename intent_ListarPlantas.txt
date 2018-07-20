@@ -1,0 +1,3 @@
+[peticion:peticion](listar) todas las [plantas:plantas](plantas)
+[peticion:peticion](listar) [plantas:plantas](plantas)
+cuales son las [plantas:plantas](plantas) registradas
