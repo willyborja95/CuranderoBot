@@ -52,7 +52,11 @@ def procesarRespuesta(data):
                 return(consultarBeneficiosPlantas(planta))
             else:
                 planta= data["slots"][0]["rawValue"]
-                return(consultarBeneficiosPlantas(planta))
+                respuesta = consultarBeneficiosPlantas(planta)
+                if respuesta is None:
+                    return ("No tengo registros de esa planta")
+                else:
+                    return(respuesta)
 
     else:
         return "Disculpa, aun estoy aprendiendo, me decias?"
