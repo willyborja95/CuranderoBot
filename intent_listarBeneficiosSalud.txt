@@ -1,2 +1,0 @@
-[peticion:peticion](listar) todos los [beneficiosSalud:beneficiosSalud](beneficios para la salud)
-[peticion:peticion](listar) [beneficiosSalud:beneficiosSalud](beneficios para la salud)

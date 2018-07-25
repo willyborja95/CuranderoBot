@@ -1,3 +1,19 @@
-[peticion:peticion](listar) todas las [plantas:plantas](plantas)
-[peticion:peticion](listar) [plantas:plantas](plantas)
-cuales son las [plantas:plantas](plantas) registradas
+[peticion:peticion](listar) [objetoBuscado:objetoBuscado](plantas)
+[peticion:peticion](listar) todas las [objetoBuscado:objetoBuscado](plantas)
+[peticion:peticion](dame) todas las [objetoBuscado:objetoBuscado](plantas) existentes
+[peticion:peticion](listar) [objetoBuscado:objetoBuscado](plantas)
+cuales son las [objetoBuscado:objetoBuscado](plantas) registradas
+que [objetoBuscado:objetoBuscado](plantas) se encuentran registradas
+dame todas las [objetoBuscado:objetoBuscado](plantas) registradas
+puedo ver cuales son todas las [objetoBuscado:objetoBuscado](plantas) registradas
+me puedes [peticion:peticion](listar) todas las [objetoBuscado:objetoBuscado](plantas) registradas
+me puedes [peticion:peticion](dejar ver) todas las [objetoBuscado:objetoBuscado](plantas) registradas
+qué [objetoBuscado:objetoBuscado](plantas) tienes registradas
+qué [objetoBuscado:objetoBuscado](plantas) tienes en tus registros
+qué tipo de [objetoBuscado:objetoBuscado](plantas) tienes registradas
+puedo ver todas las [objetoBuscado:objetoBuscado](plantas) registradas
+sobre qué [objetoBuscado:objetoBuscado](plantas) puedo consultar
+qué [objetoBuscado:objetoBuscado](plantas medicinales) tienes registradas
+qué registros de [objetoBuscado:objetoBuscado](plantas medicinales) tienes
+sobre qué puedo [peticion:peticion](consultar)
+sobre qué tipo de [objetoBuscado:objetoBuscado](plantas) puedo [peticion:peticion](consultar)

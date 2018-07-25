@@ -3,26 +3,7 @@ from SPARQLWrapper import SPARQLWrapper2, JSON
 
 class consultar:
     def __init__(self, dbC):
-        # Variables de inicio
-        self.sparql = SPARQLWrapper2(dbC, "http://localhost:8890/plantasmedicinales2")
-    # Metodos
-
-    def cPais(self, pais):
-        r = ""
-        self.sparql.setQuery("""
-            SELECT ?pais, ?nombre WHERE{
-            ?pais rdfs:label ?nombre .
-            FILTER (?nombre =\""""+pais+"""\"@es) .
-            } ORDER BY ?nombre
-        """)
-        dic = {}
-        for result in self.sparql.query().bindings:
-            dic = {'nombre': result["nombre"].value, 'uri': result["pais"].value}
-        if len(dic) != 0:
-            return dic
-        else:
-            # print("No encuentro el Pais")
-            return 0
+        self.sparql = SPARQLWrapper2(dbC, "http://localhost:8890/plantasmedicinales")
 
     def consultaBeneficiosPlantaDb(self, planta):
         r = ""
@@ -54,7 +35,6 @@ class consultar:
         if len(lista) != 0:
             return lista
         else:
-            # print("No encuentro el Pais")
             return 0
 
     def consultaTodosBeneficios(self):
@@ -72,23 +52,7 @@ class consultar:
         if len(lista) != 0:
             return lista
         else:
-            # print("No encuentro el Pais")
             return 0
-
-    def consultaTipo(self, nombreElemento):
-        r = ""
-        self.sparql.setQuery("""
-            SELECT ?nombreTipo 
-            WHERE{
-            ?uri <http://www.example.org/UTPL/ontology/hasName> \""""+nombreElemento+"""\"@es . 
-            ?uri rdf:type ?tipo .
-            ?tipo <http://www.example.org/UTPL/ontology/hasName> ?nombreTipo .
-            }
-        """)
-        strTipo = ""
-        for result in self.sparql.query().bindings:
-            strTipo = result["nombreTipo"].value
-        return strTipo
 
     def consultaPlantasDadoBeneficio(self, nombreBeneficio):
         r = ""
@@ -106,5 +70,4 @@ class consultar:
         if len(lista) != 0:
             return lista
         else:
-            # print("No encuentro el Pais")
             return 0
