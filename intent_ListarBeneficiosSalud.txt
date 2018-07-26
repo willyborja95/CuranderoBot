@@ -1,0 +1,9 @@
+[peticion:peticion](listar) [objetoBuscado:objetoBuscado](beneficios para la salud)
+[peticion:peticion](listar) todos los [objetoBuscado:objetoBuscado](beneficios para la salud)
+[peticion:peticion](listar) todos los [objetoBuscado:objetoBuscado](beneficios de las plantas)
+[peticion:peticion](listar) [objetoBuscado:objetoBuscado](beneficios de las plantas)
+[objetoBuscado:objetoBuscado](beneficios para la salud) de las [objetoBuscado:objetoBuscado](plantas)
+cuáles son los [peticion:peticion](beneficios para la salud) de las [objetoBuscado:objetoBuscado](plantas)
+dame todos los [peticion:peticion](beneficios para la salud) de las [objetoBuscado:objetoBuscado](plantas)
+me puedes listar todos los [peticion:peticion](beneficios para la salud) de las [objetoBuscado:objetoBuscado](plantas)
+qué [peticion:peticion](beneficios para la salud) tienes registrados

@@ -1,7 +1,7 @@
 {
   "entities": {
     "entidades": {
-      "automatically_extensible": true,
+      "automatically_extensible": false,
       "data": [
         {
           "synonyms": [
@@ -109,32 +109,32 @@
           "value": "nabo"
         }
       ],
-      "use_synonyms": true
+      "use_synonyms": false
     },
     "objetoBuscado": {
-      "automatically_extensible": true,
+      "automatically_extensible": false,
       "data": [],
-      "use_synonyms": true
+      "use_synonyms": false
     },
     "peticion": {
-      "automatically_extensible": true,
+      "automatically_extensible": false,
       "data": [],
-      "use_synonyms": true
+      "use_synonyms": false
     },
     "planta": {
-      "automatically_extensible": true,
+      "automatically_extensible": false,
       "data": [],
-      "use_synonyms": true
+      "use_synonyms": false
     },
     "saludo": {
-      "automatically_extensible": true,
+      "automatically_extensible": false,
       "data": [],
-      "use_synonyms": true
+      "use_synonyms": false
     },
     "ventajaMedicinal": {
-      "automatically_extensible": true,
+      "automatically_extensible": false,
       "data": [],
-      "use_synonyms": true
+      "use_synonyms": false
     }
   },
   "intents": {
@@ -915,6 +915,20 @@
               "text": "listar"
             },
             {
+              "entity": "objetoBuscado",
+              "slot_name": "objetoBuscado",
+              "text": "beneficios para la salud"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "entity": "peticion",
+              "slot_name": "peticion",
+              "text": "listar"
+            },
+            {
               "text": " todos los "
             },
             {
@@ -958,8 +972,8 @@
         {
           "data": [
             {
-              "entity": "peticion",
-              "slot_name": "peticion",
+              "entity": "objetoBuscado",
+              "slot_name": "objetoBuscado",
               "text": "beneficios para la salud"
             },
             {

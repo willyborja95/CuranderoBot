@@ -1,14 +1,19 @@
 hola, hey
-beneficios, beneficio, ventajas, ventaja, bondades, bondad
-plantas, planta
-listar, enumerar, listame, enumerame
-beneficios para la salud, beneficios salud
-sirve, servir
-manzanilla, manzanillas
-ortiga
-chilca
+listar, enumerar, presentar
+plantas, vegetales
+dejar ver, visualizar, ver
+plantas medicinales, plantas curativas
+dame, devuelveme 
+consultar, indagar, preguntar
+buena, útil
 menta
+beneficios para la salud, beneficios salud, beneficios de las plantas
+beneficios, bondades, propiedades curativas, ventajas curativas
+sirve, utiliza, emplea
+totora
+manzanilla
+chilca
+ortiga
 floripondio
 penco
 nabo
-totora
